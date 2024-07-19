@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-skills">My Skills</a></li>
+            <li><a href="#my-projects">Projects</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            I am Antony Katoi, a student at<br />
+            Dedan Kimathi University of Technology
+          </h1>
+          <h2>A GIS and Remote Sensing Expert</h2>
+        </div>
+      </div>
+    </div>
+    <div id="about-me" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about1.JPG" alt="About Me Image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am David Antony Katoi from Katutu (Kitui County, Kenya). I am
+              currently studying at Dedan Kimathi University of Technology in
+              the field of Geospatial Information Technology. I am interested
+              and have a great passion to harness the power of geospatial data
+              to make informed decisions and solve complex spatial challenges.
+              With a passion for innovation, I aim to deliver high-quality
+              geospatial solutions tailored to meet specific needs of diverse
+              clients.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="openTab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2022-Present</span><br />BSC GIS & Remote Sensing at
+                  DEKUT
+                </li>
+                <li>
+                  <span>2020-2021</span><br />Computer Studies at ZnR Karich
+                  College
+                </li>
+                <li>
+                  <span>2018-2021</span><br />Secondary School at Mutanda High
+                  School
+                </li>
+                <li>
+                  <span>2010-2017</span><br />Primary School at Katutu Primary
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-Present</span><br />Geospatial Analysis and Remote
+                  Sensing Analysis
+                </li>
+                <li>
+                  <span>2021-2022</span><br />Computer Studies Teacher at
+                  Mutanda High
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------My Skills--------->
+    <div id="my-skills" class="section">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+          <div class="skill-item">
+            <h2 class="skill-title">GIS Software Proficiency</h2>
+            <p>
+              I have experience in software like ArcGIS Pro, ArcGIS Online,
+              ArcGIS, QGIS, ERDAS, ENVI, POSTGIS, Google Earth Engine, etc which
+              can be utilized in spatial analysis, mapping, geodatabase
+              management amongst many other GIS applications.
+            </p>
+          </div>
+          <div class="skill-item">
+            <h2 class="skill-title">Remote Sensing</h2>
+            <p>
+              Processing of satellite imagery, aerial photographs, and LiDAR
+              data for diverse applications such as land cover classification,
+              change detection, and environmental monitoring.
+            </p>
+          </div>
+          <div class="skill-item">
+            <h2 class="skill-title">Web Mapping and GIS</h2>
+            <p>
+              Development and deployment of web-based GIS applications.
+              Proficiency in HTML, CSS, JavaScript for creating interactive
+              maps.
+            </p>
+          </div>
+          <div class="skill-item">
+            <h2 class="skill-title">Cartography and Visualization</h2>
+            <p>
+              Skills in Map Design, thematic mapping (creating chloropleth maps,
+              heat maps, etc.), and 3D Visualization.
+            </p>
+          </div>
+          <div class="skill-item">
+            <h2 class="skill-title">Spatial Planning</h2>
+            <p>
+              Techniques for Spatial proximity analysis like buffering and
+              overlay, analyzing of spatial patterns and relationships and
+              network analysis skills which include route optimization, service
+              area analysis, closest facility analysis etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------My Projects--------->
+    <div id="my-projects" class="section">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+          <div class="project">
+            <img src="images/Project1.png" alt="classification" />
+            <div class="project-details">
+              <h3>Classification</h3>
+              <p>
+                The aim of this project was to develop an image classification
+                model that accurately categorizes different objects or regions
+                within an image based on their backscatter values. By analyzing
+                the intensity of signals reflected from the image's surface, I
+                sought to extract meaningful features that can be used to
+                discriminate between various classes.
+              </p>
+              <a href="https://github.com/katoiDavid" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project2.png" alt="Network-Analysis" />
+            <div class="project-details">
+              <h3>Network Analysis</h3>
+              <p>
+                The objective of this project was to employ ArcGIS Pro's network
+                analysis tools to identify the closest facility and generate
+                service areas for a given dataset. By utilizing these geospatial
+                techniques we aimed to optimize location-based decisions, assess
+                accessibility, and understand spatial relationships within the
+                study area.
+              </p>
+              <a href="https://github.com/katoiDavid" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project3.jpg" alt="Suitability Analysis" />
+            <div class="project-details">
+              <h3>Suitability Analysis</h3>
+              <p>
+                The aim of this project is to identify optimal locations for new
+                school construction through a rigorous suitability analysis. By
+                evaluating various environmental, social, and infrastructural
+                factors, I aimed to delineate areas that best meet the criteria
+                for school siting. This analysis will inform decision-making,
+                ensuring that new schools are established in locations that
+                effectively serve the community and minimize potential negative
+                impacts.
+              </p>
+              <a href="https://github.com/katoiDavid" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project4.png" alt="NDVI calculation" />
+            <div class="project-details">
+              <h3>NDVI Calculation</h3>
+              <p>
+                The project utilized Google Earth Engine to calculate and
+                analyze NDVI, providing valuable insights into vegetation
+                health, distribution, and changes over time for [specific area
+                or application]. This project aimed to demonstrate the potential
+                of remote sensing and cloud computing for effective
+                environmental monitoring and management in Makueni County.
+              </p>
+              <a href="https://github.com/katoiDavid" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="see-more">
+          <a
+            href="https://github.com/katoiDavid"
+            target="_blank"
+            class="see-more-btn"
+            >See More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--------------Contact Section-------------->
+
+    <div id="Contact" class="section">
+      <div class="container">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            You can reach me out for any discussion via email, message or
+            reaching out on my social media below:
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:antonykatoi0@gmail.com">antonykatoi0@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> <a href="tel:0768432814">0768432814</a>
+          </p>
+          <div class="socialmedia-icons">
+            <a href="https://www.facebook.com/AntonyKatoi" target="_blank"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+            <a href="https://www.instagram.com/AntonyKatoiDavid" target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a href="https://twitter.com/AntonyKatoi" target="_blank"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a href="https://www.linkedin.com/in/Antony" target="_blank"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+            <a href="https://wa.me/254768432814" target="_blank"
+              ><i class="fab fa-whatsapp"></i> WhatsApp</a
+            >
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--------------footer-------------->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-left">
+            <p>Antony Katoi David</p>
+          </div>
+          <div class="footer-right">
+            <p class="footer__copy">&#169; Antony All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

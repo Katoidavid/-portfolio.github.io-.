@@ -1,2 +1,2 @@
-# Myportfolio
-This is a webpage showcasing my skills, projects and how to contact me.
+# Practice
+My webpage as a beginner
